@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 48px; /* Adjust size as needed */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(270deg, #04ff00, #ff0000, #15ff00);
+    background-size: 400% 400%; /* This allows for the gradient to animate */
+    -webkit-background-clip: text; /* This clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient shows */
+    animation: gradient 5s ease infinite; /* Animation properties */
+}
+
+/* Animation keyframes */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Quiz Container */
+.quiz-container {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#question{
+    color: #ff8b51;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Option Buttons */
+.option {
+    background-color: #1f2937;
+    color: white;
+    border: 1px solid #4b5563;
+    margin: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #374151;
+}
+
+/* Correct and Wrong Answers */
+.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.wrong {
+    background-color: #dc3545;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
